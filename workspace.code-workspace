@@ -1,0 +1,81 @@
+{
+  "folders": [
+	{
+		"name": "html",
+		"path": "..\\..\\..\\html"
+	},
+	{
+		"name": "Project",
+		"path": "..\\..\\..\\Udemy html+css\\Project"
+	},
+	{
+		"name": "HomeworkUdemyI",
+		"path": "..\\..\\..\\Udemy html+css\\HomeworkUdemyI"
+	},
+	{
+		"name": "Uemy2_Bootstrap",
+		"path": "..\\..\\..\\Udemy html+css\\Uemy2_Bootstrap"
+	},
+	{
+		"name": "Projects",
+		"path": "..\\Projects"
+	},
+	{
+		"name": "Lesson9",
+		"path": "..\\Lesson9"
+	},
+	{
+		"name": "Lesson8",
+		"path": "..\\Lesson8"
+	},
+	{
+		"name": "Lesson7",
+		"path": "..\\Lesson7"
+	},
+	{
+		"name": "Lesson6",
+		"path": "..\\Lesson6"
+	},
+	{
+		"name": "Lesson4",
+		"path": "..\\Lesson4"
+	},
+	{
+		"name": "Lesson 3",
+		"path": "..\\Lesson 3"
+	},
+	{
+		"name": "Lesson 1",
+		"path": "..\\Lesson 1"
+	},
+	{
+		"name": "layouts",
+		"path": "..\\layouts"
+	},
+	{
+		"name": "Homework10",
+		"path": "..\\Homework10"
+	},
+	{
+		"name": "Homework9",
+		"path": "..\\Homework9"
+	},
+	{
+		"name": "Homework8",
+		"path": "..\\Homework8"
+	},
+	{
+		"name": "Responsive",
+		"path": "..\\Responsive"
+	},
+	{
+		"path": "..\\Animation"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Animation"
+  }
+}
