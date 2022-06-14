@@ -1,31 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain)
+  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-	margin: 0;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  margin: 0;
 }
 .header {
-	background: pink;
-	height: 100px;
+  background: white;
+  flex: 0 0 120px;
+}
+.title {
+  font-size: 50px;
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 10px 0 0 105px;
+}
+
+.description {
+  font-size: 40px;
+  float: right;
+  margin: 55px 0 0 0;
+}
+.logo img {
+  width: 150px;
+  float: right;
 }
 .main {
-	background: grey;
-	display: flex;
-	min-height: calc(100vh - 170px);
+  background: grey;
+  flex-grow: 1;
+  display: flex;
 }
 .sidebar {
-	background: gold;
-	flex: 0 0 240px;
+  background: white;
+  flex: 0 0 240px;
 }
-.container {
-	width: 100%;
-	max-width: 1440px;
-	margin: 0 auto;
-	display: flex;
+.attorney img {
+  position: relative;
+  top: 55px;
+  left: 70px;
+}
+
+.services {
+  position: relative;
+  /* transform: skewY(10deg); */
+  margin: 80px 0 0 20px;
+}
+.problems {
+  color: red;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: right;
+}
+
+.solution {
+  font-size: 50px;
+  text-align: center;
+  color: green;
+  font-weight: 600;
+  margin: 50px 0 0;
+}
+span {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  width: 220px;
+  height: 40px;
+  background: rgb(119, 117, 117);
+  z-index: -3;
+  transform: skewX(-45deg);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+li:first-of-type a {
+  font-size: 22px;
+  font-weight: 600;
+}
+.service-item {
+  position: relative;
+  list-style: none;
+  width: 220px;
+  border: 2px black solid;
+  background: grey;
+  padding: 15px;
+  transition: 0.5s;
+  z-index: calc(1 * var(--i));
+}
+.service-item:hover {
+  transform: translateX(100px);
+  background: rgb(82, 82, 82);
+}
+.service-item:hover:first-of-type {
+  transform: none;
+}
+.service-item::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  right: -40px;
+  width: 40px;
+  height: 100%;
+  background: grey;
+  border: 2px black solid;
+  filter: brightness(0.7);
+  transform-origin: right;
+  transform: skewY(-45deg);
+  z-index: -1;
+}
+.service-item::before {
+  content: "";
+  position: absolute;
+  left: 117px;
+  bottom: 80px;
+  background: url(/img/usd-removebg-preview.png);
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: none;
+}
+.service-item:first-of-type::before {
+  content: "";
+  background: url();
+}
+.service-item:hover::before {
+  display: block;
+}
+.wrapper {
+  min-height: 100vh;
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
 }
 .content {
-	background: brown;
-	flex-grow: 1;
+  background: white;
+  flex-grow: 1;
+  padding: 0 40px;
+}
+.slider {
+  width: 100%;
+  max-width: 1024px;
+  margin: 30px 0 50px 180px;
+}
+.image {
+  width: 300px;
+  height: 200px;
 }
 .footer {
-	background: black;
-	height: 70px;
-	color: #fff;
+  background: black;
+  flex: 0 0 100px;
+}
+.confidence {
+  color: white;
+  font-size: 55px;
+  text-align: center;
+  padding: 25px 0;
 }
